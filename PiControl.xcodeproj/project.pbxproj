@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E9CA881C2CE165C200EE33A3 /* PiControlRestMessages in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA881B2CE165C200EE33A3 /* PiControlRestMessages */; };
+		E9CA881F2CE16C0300EE33A3 /* Ciao in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA881E2CE16C0300EE33A3 /* Ciao */; };
+		E9CA88312CE3E34C00EE33A3 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA88302CE3E34C00EE33A3 /* Valet */; };
+		E9CA885B2CE51FC500EE33A3 /* MarqueeText in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA885A2CE51FC500EE33A3 /* MarqueeText */; };
+		E9CA88652CF4E2CD00EE33A3 /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA88642CF4E2CD00EE33A3 /* MQTTNIO */; };
+		E9CA88772CF5E81300EE33A3 /* PiControlMqttMessages in Frameworks */ = {isa = PBXBuildFile; productRef = E9CA88762CF5E81300EE33A3 /* PiControlMqttMessages */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E921FFD82CE126DE0098F765 /* PiControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CA88162CE164F900EE33A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E9CA88182CE164FD00EE33A3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +34,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CA885B2CE51FC500EE33A3 /* MarqueeText in Frameworks */,
+				E9CA88312CE3E34C00EE33A3 /* Valet in Frameworks */,
+				E9CA88652CF4E2CD00EE33A3 /* MQTTNIO in Frameworks */,
+				E9CA881F2CE16C0300EE33A3 /* Ciao in Frameworks */,
+				E9CA881C2CE165C200EE33A3 /* PiControlRestMessages in Frameworks */,
+				E9CA88772CF5E81300EE33A3 /* PiControlMqttMessages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +51,8 @@
 			children = (
 				E921FFDA2CE126DE0098F765 /* PiControl */,
 				E921FFD92CE126DE0098F765 /* Products */,
+				E9CA88162CE164F900EE33A3 /* README.md */,
+				E9CA88182CE164FD00EE33A3 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,12 @@
 			);
 			name = PiControl;
 			packageProductDependencies = (
+				E9CA881B2CE165C200EE33A3 /* PiControlRestMessages */,
+				E9CA881E2CE16C0300EE33A3 /* Ciao */,
+				E9CA88302CE3E34C00EE33A3 /* Valet */,
+				E9CA885A2CE51FC500EE33A3 /* MarqueeText */,
+				E9CA88642CF4E2CD00EE33A3 /* MQTTNIO */,
+				E9CA88762CF5E81300EE33A3 /* PiControlMqttMessages */,
 			);
 			productName = PiControl;
 			productReference = E921FFD82CE126DE0098F765 /* PiControl.app */;
@@ -94,6 +119,14 @@
 			);
 			mainGroup = E921FFCF2CE126DE0098F765;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E9CA881A2CE165C200EE33A3 /* XCRemoteSwiftPackageReference "pi-control-rest-messages" */,
+				E9CA881D2CE16C0300EE33A3 /* XCRemoteSwiftPackageReference "Ciao" */,
+				E9CA882F2CE3E34C00EE33A3 /* XCRemoteSwiftPackageReference "Valet" */,
+				E9CA88592CE51FC500EE33A3 /* XCRemoteSwiftPackageReference "MarqueeText" */,
+				E9CA88632CF4E2CD00EE33A3 /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+				E9CA88752CF5E81300EE33A3 /* XCRemoteSwiftPackageReference "PiControlMqttMessages" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E921FFD92CE126DE0098F765 /* Products */;
 			projectDirPath = "";
@@ -252,6 +285,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -260,20 +294,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.PiControl;
+				MARKETING_VERSION = 2024.11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.picontrol.Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Debug;
@@ -291,6 +326,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -299,20 +335,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.thbonk.PiControl;
+				MARKETING_VERSION = 2024.11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.picontrol.Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
@@ -339,6 +376,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9CA881A2CE165C200EE33A3 /* XCRemoteSwiftPackageReference "pi-control-rest-messages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PiControl/pi-control-rest-messages.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E9CA881D2CE16C0300EE33A3 /* XCRemoteSwiftPackageReference "Ciao" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlTavares/Ciao.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		E9CA882F2CE3E34C00EE33A3 /* XCRemoteSwiftPackageReference "Valet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/Valet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E9CA88592CE51FC500EE33A3 /* XCRemoteSwiftPackageReference "MarqueeText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joekndy/MarqueeText.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E9CA88632CF4E2CD00EE33A3 /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sroebert/mqtt-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
+			};
+		};
+		E9CA88752CF5E81300EE33A3 /* XCRemoteSwiftPackageReference "PiControlMqttMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PiControl/PiControlMqttMessages.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9CA881B2CE165C200EE33A3 /* PiControlRestMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA881A2CE165C200EE33A3 /* XCRemoteSwiftPackageReference "pi-control-rest-messages" */;
+			productName = PiControlRestMessages;
+		};
+		E9CA881E2CE16C0300EE33A3 /* Ciao */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA881D2CE16C0300EE33A3 /* XCRemoteSwiftPackageReference "Ciao" */;
+			productName = Ciao;
+		};
+		E9CA88302CE3E34C00EE33A3 /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA882F2CE3E34C00EE33A3 /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
+		};
+		E9CA885A2CE51FC500EE33A3 /* MarqueeText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA88592CE51FC500EE33A3 /* XCRemoteSwiftPackageReference "MarqueeText" */;
+			productName = MarqueeText;
+		};
+		E9CA88642CF4E2CD00EE33A3 /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA88632CF4E2CD00EE33A3 /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+		E9CA88762CF5E81300EE33A3 /* PiControlMqttMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9CA88752CF5E81300EE33A3 /* XCRemoteSwiftPackageReference "PiControlMqttMessages" */;
+			productName = PiControlMqttMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E921FFD02CE126DE0098F765 /* Project object */;
 }
