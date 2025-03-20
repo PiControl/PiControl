@@ -27,15 +27,12 @@ struct SelectAccessoryStepView: View, WizardStep {
     // MARK: - Public Properties
     
     var body: some View {
-        VStack {
-            Text("Select an accessory to use.")
-                .padding()
-            
-            Button("Complete") {
-                self.wizardController.completeCurrentStep()
-            }
+        List(self.accessories, id: \.id, selection: $selectedAccessoryId) { accessory in
+            Text("\(accessory.name)")
+                .tag(accessory.id)
         }
         .onAppear(perform: self.subscribeTopics)
+        .onChange(of: self.selectedAccessoryId, self.selectedAccessoryChanged)
     }
     
     let title: String = "Select Accessory"
@@ -54,8 +51,16 @@ struct SelectAccessoryStepView: View, WizardStep {
     @State
     private var accessories: [Accessory] = []
     
+    @State
+    private var selectedAccessoryId: String?
+    
     
     // MARK: - Private Methods
+    
+    private func selectedAccessoryChanged() {
+        guard let _ = selectedAccessoryId else { return }
+        self.wizardController.completeCurrentStep()
+    }
     
     private func subscribeTopics() {
         do {

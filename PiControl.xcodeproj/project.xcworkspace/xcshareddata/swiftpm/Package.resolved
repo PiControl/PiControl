@@ -1,5 +1,5 @@
 {
-  "originHash" : "2b0c1be3336b9cc7dd42ba56c9e935eef31f3fce4c1586da147ee6ba1ae00e33",
+  "originHash" : "5158f77e32229cfecf6444722fe94c4c5d60088d9b406180b13342c3786822c1",
   "pins" : [
     {
       "identity" : "ciao",
@@ -43,7 +43,7 @@
       "location" : "https://github.com/PiControl/PiControlMqttMessages.git",
       "state" : {
         "branch" : "main",
-        "revision" : "38cd26231c679178cb66953119f8d446900b837c"
+        "revision" : "3558c65823e891c3b416d1885fa636ef5eb3785e"
       }
     },
     {
@@ -69,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "9cb486020ebf03bfa5b5df985387a14a98744537",
-        "version" : "1.6.1"
+        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
+        "version" : "1.6.2"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "914081701062b11e3bb9e21accc379822621995e",
-        "version" : "2.76.1"
+        "revision" : "dca6594f65308c761a9c409e09fbf35f48d50d34",
+        "version" : "2.77.0"
       }
     },
     {

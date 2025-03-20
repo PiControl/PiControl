@@ -100,6 +100,7 @@ class MQTTClientService: ObservableObject {
                 target: .host(host, port: port),
                 protocolVersion: .version5,
                 clientId: PiControlApp.deviceId,
+                clean: false,
                 credentials: .init(username: username, password: password)
             ))
         
